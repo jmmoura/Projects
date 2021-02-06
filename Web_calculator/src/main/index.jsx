@@ -88,9 +88,9 @@ const Calculator = () => {
         setCurrent(0)
     }
 
-    const buttons = ['CE', '/', '7', '8', '9', '*', '4', '5', '6', '-', '3', '2', '1', '+', '0', '.', '=']
+    const keys = ['CE', '/', '7', '8', '9', '*', '4', '5', '6', '-', '3', '2', '1', '+', '0', '.', '=']
 
-    const listButtons = buttons.map((value, index) => {
+    const listButtons = keys.map((value, index) => {
         switch (value) {
             case 'CE':
                 return <Button key={index} className='ce' value={value} onClick={() => clearMemory()} />
